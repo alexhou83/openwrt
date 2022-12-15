@@ -16,3 +16,16 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+
+##############################################################################################
+
+# 服务
+
+#ShadowSocksR Plus+
+git clone https://github.com/fw876/helloworld.git package/helloworld
+
+#passwall
+git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
+git clone -b luci https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
+
+##############################################################################################
